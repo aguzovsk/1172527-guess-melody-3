@@ -7,6 +7,7 @@ describe(`Render welcome screen component.`, () => {
     const tree = renderer
       .create(<WelcomeScreen
         errorsCount={3}
+        onWelcomeButtonClick={() => {}}
       />)
       .toJSON();
 
